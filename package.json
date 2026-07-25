@@ -1,0 +1,10 @@
+{
+  "name": "johan-official-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Página web oficial ficticia de Johan para el Decade World Tour.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "check": "python3 - <<'PY'\nfrom html.parser import HTMLParser\nfrom pathlib import Path\nfor file in ['index.html']:\n    HTMLParser().feed(Path(file).read_text(encoding='utf-8'))\nprint('html parsed')\nPY"
+  }
+}
