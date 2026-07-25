@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johan Official | Decade World Tour</title>
+    <meta
+      name="description"
+      content="Sitio oficial de Johan: historia, discografía, Decade World Tour, boletos, galería, noticias, tienda y fan club."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Johan Official inicio">JOHAN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+        <a href="#historia">Historia</a>
+        <a href="#discografia">Discografía</a>
+        <a href="#tour">Tour</a>
+        <a href="#boletos">Boletos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tienda">Tienda</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-video" aria-hidden="true">
+          <div class="spotlight spotlight-one"></div>
+          <div class="spotlight spotlight-two"></div>
+          <div class="stage-grid"></div>
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">The Official Website</p>
+          <h1>JOHAN</h1>
+          <p class="subtitle">Singer • Songwriter • Producer</p>
+          <h2>The Decade World Tour Continues</h2>
+          <div class="hero-actions">
+            <a class="btn primary" href="#boletos">🎟️ Comprar boletos</a>
+            <a class="btn" href="#historia">📖 Conoce su historia</a>
+            <a class="btn" href="#discografia">🎵 Discografía</a>
+            <a class="btn" href="#tour">🌍 Tour</a>
+            <a class="btn" href="#tienda">🛍️ Tienda</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="historia" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Cronología interactiva</p>
+          <h2>Historia</h2>
+          <p>Ocho capítulos que trazan la evolución sonora, visual y emocional de Johan.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>2007</span><h3>BAD</h3><p>Primer gran álbum.</p><blockquote>“El comienzo de una leyenda.”</blockquote></article>
+          <article class="timeline-item reveal"><span>2011</span><h3>DANGEROUS</h3><p>Una etapa más madura y experimental.</p></article>
+          <article class="timeline-item reveal"><span>2015</span><h3>HISTORY</h3><p>El álbum donde Johan abrió su corazón y contó su historia.</p></article>
+          <article class="timeline-item reveal"><span>2019</span><h3>THIS IS IT</h3><p>El inicio de una nueva etapa artística.</p></article>
+          <article class="timeline-item reveal"><span>2021</span><h3>XSCAPE</h3><p>Un álbum sobre escapar del dolor y reconstruirse.</p></article>
+          <article class="timeline-item reveal"><span>2024</span><h3>DECADE</h3><p>El proyecto que reunió diez años de evolución.</p></article>
+          <article class="timeline-item reveal"><span>2025</span><h3>DECADE DELUXE</h3><p>Nuevas canciones y una experiencia exclusiva para los fans.</p></article>
+          <article class="timeline-item reveal"><span>2026</span><h3>ONE MORE CHANCE</h3><p>Un álbum dedicado al amor, la superación y los nuevos comienzos.</p></article>
+        </div>
+      </section>
+
+      <section id="discografia" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Álbumes oficiales</p>
+          <h2>Discografía</h2>
+          <p>Haz clic en una tarjeta para ver portada, año, canciones, historia, fotos y videos.</p>
+        </div>
+        <div class="album-grid" id="albumGrid"></div>
+      </section>
+
+      <section id="tour" class="section tour-section">
+        <div class="container tour-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Decade World Tour</p>
+            <h2>Mapa de gira</h2>
+            <p>Selecciona una parada para consultar ciudad, estadio, fechas, capacidad y estado.</p>
+          </div>
+          <div class="map-card reveal" id="tourMap" aria-label="Mapa interactivo de países"></div>
+          <aside class="next-stop reveal">
+            <p class="eyebrow">Próxima parada</p>
+            <h3>🇪🇸 Madrid</h3>
+            <p>23–25 septiembre 2026</p>
+            <strong>Santiago Bernabéu</strong>
+            <a class="btn primary full" href="#boletos">🎟️ BUY TICKETS</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="boletos" class="section container tickets">
+        <div class="section-heading reveal"><p class="eyebrow">Acceso oficial</p><h2>Comprar boletos</h2></div>
+        <form class="ticket-form reveal">
+          <label>País<select><option>España</option><option>México</option><option>Estados Unidos</option><option>Argentina</option></select></label>
+          <label>Ciudad<select><option>Madrid</option><option>Ciudad de México</option><option>Los Ángeles</option><option>Buenos Aires</option></select></label>
+          <label>Fecha<select><option>23 septiembre 2026</option><option>24 septiembre 2026</option><option>25 septiembre 2026</option></select></label>
+          <label>Tipo de entrada<select><option>General</option><option>Premium</option><option>VIP</option></select></label>
+          <label>Cantidad<input type="number" min="1" max="8" value="2" /></label>
+          <button class="btn primary" type="button">Comprar ahora</button>
+        </form>
+      </section>
+
+      <section id="galeria" class="section container">
+        <div class="section-heading reveal"><p class="eyebrow">Archivo visual</p><h2>Galería</h2></div>
+        <div class="gallery-grid reveal">
+          <span>Conciertos</span><span>Ensayos</span><span>Backstage</span><span>Premieres</span><span>Premios</span><span>Videos</span>
+        </div>
+      </section>
+
+      <section id="noticias" class="section container news-shop">
+        <div class="panel reveal"><p class="eyebrow">Últimas noticias</p><h2>Noticias</h2><ul><li>Johan estrena Get Your Weight Off Of Me</li><li>Liberian Girl regresa después de diez años</li><li>Decade World Tour llega a Europa</li><li>Fox Special confirmado</li></ul></div>
+        <div id="tienda" class="panel reveal"><p class="eyebrow">Merch oficial</p><h2>Tienda</h2><div class="shop-grid"><span>👕 Camisetas</span><span>🧥 Chaquetas</span><span>🧢 Gorras</span><span>🎤 Posters</span><span>💿 Vinilos</span></div></div>
+      </section>
+
+      <section id="danna" class="section container feature reveal">
+        <p class="eyebrow">Sección especial</p><h2>❤️ Danna & Johan</h2><p>Fotos seleccionadas, recuerdos destacados y publicaciones de Instagram reunidas en una experiencia íntima para fans.</p>
+      </section>
+
+      <section id="fanclub" class="section container feature reveal">
+        <p class="eyebrow">Comunidad oficial</p><h2>👑 Fan Club</h2><p>Crea tu cuenta y recibe preventa de boletos, noticias exclusivas, ensayos en vivo, contenido detrás de cámaras y descuentos en mercancía.</p>
+        <a class="btn primary" href="mailto:fanclub@johanofficial.example">Crear cuenta</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>JOHAN OFFICIAL</strong>
+      <nav aria-label="Redes sociales"><a>Instagram</a><a>TikTok</a><a>YouTube</a><a>Spotify</a><a>Apple Music</a><a>Twitter/X</a></nav>
+    </footer>
+
+    <dialog id="albumDialog"><button class="close" type="button" aria-label="Cerrar">×</button><div id="albumDetail"></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
